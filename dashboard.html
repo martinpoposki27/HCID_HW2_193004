@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+    <title>Dashboard</title>
+
+
+</head>
+<body>
+<div>
+    <div class="navbar navbar-expand navbar-light bg-light px-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Courses</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"> <a class="nav-link" href="level.html">Level</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="support.html">Support</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="login.html">Logout</a> </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <h1 class="text">Вештачка интелигенција</h1>
+</div>
+
+<div class="container d-flex">
+    <div class="d-flex flex-row col-8">
+        <div class="card m-3 flex-row" style="width: 30%; height: 300px">
+            <div class="card-body">
+                <h5 class="card-title">Почетна лекција</h5>
+                <h6 class="card-subtitle">Запознавање со поимот</h6>
+                <p class="card-text text-muted">Што значи поимот вештачка интелигенција? Каде се користи? Како го променува светот и колку е значајна во денешното општество?</p>
+                <a href="lecture.html" class="text-light bg-success p-1 rounded-2 text-decoration-none">Продолжи</a>
+            </div>
+        </div>
+        <div class="card m-3 opacity-50 flex-row" style="width: 30%; height: 300px">
+            <div class="card-body">
+                <h5 class="card-title">Машинско учење</h5>
+                <h6 class="card-subtitle">Лекција 1</h6>
+                <p class="card-text text-muted">Што значи поимот машинско учење? Како е тој повразан со вештачката инелигенција? Како се користи во практика?</p>
+                <a href="#" class="not-enough text-light bg-warning p-1 rounded-2 text-decoration-none"
+                data-bs-target="#modal" data-bs-toggle="modal">Почни</a>
+            </div>
+        </div>
+        <div class="card m-3 opacity-50 flex-row" style="width: 30%; height: 300px">
+            <div class="card-body">
+                <h5 class="card-title">Машинско учење</h5>
+                <h6 class="card-subtitle">Лекција 2</h6>
+                <p class="card-text text-muted">Како функционира машинското учење? Што е тоа машински модел? Кои технологии се користат за изработување на модел? </p>
+                <a href="#" class="text-light з bg-warning p-1 rounded-2 text-decoration-none">Почни</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-4 flex-row ms-5">
+        <div class="row card border-2 border-success rounded-3 mb-3" style="width: 90%">
+            <div class="card-header bg-success text-light rounded-3 ">
+                Статус
+            </div>
+            <div class="card-body">
+                <div class="progress mb-5">
+                    <div class="progress-bar bg-success" style="width: 23%">
+                        <span>23%</span>
+                    </div>
+                </div>
+                <p class="card-text">До вашата цел уште:</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">2 преостанати лекции</li>
+                    <li class="list-group-item">3 преостанати тестови</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row card border-2 border-danger rounded-3 mb-3" style="width: 90%">
+            <div class="card-header bg-danger text-light rounded-3 ">
+                Поддршка
+            </div>
+            <div class="card-body">
+                <p class="card-text">Имате проблем? Пријавате тука!</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <a href="support.html" class="text-danger text-decoration-none">Проблем со прашање</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="support.html" class="text-danger text-decoration-none">Проблем со системот</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Немате доволно знаење за оваа лекција!</h5>
+            </div>
+            <div class="modal-body">
+                Завршете ги сите претходни лекции пред да пристапите на оваа лекција!
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Затвори</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container border-top border-bottom">
+    <ul class="pagination justify-content-center m-3">
+        <li class="page-item"> <a href="#" class="page-link">Prev</a> </li>
+        <li class="page-item active"> <a href="#" class="page-link">1</a> </li>
+        <li class="page-item"> <a href="#" class="page-link">2</a> </li>
+        <li class="page-item"> <a href="#" class="page-link">3</a> </li>
+        <li class="page-item"> <a href="#" class="page-link">4</a> </li>
+        <li class="page-item"> <a href="#" class="page-link">Next</a> </li>
+    </ul>
+</div>
+
+<div class="container">
+    <p class="text-muted">Copyright</p>
+</div>
+
+</body>
+</html>
